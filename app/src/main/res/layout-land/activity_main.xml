@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:text=""
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b1"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b2"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b3"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b4"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b5"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b6"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b7"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b8"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b9"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonC"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/bc"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/b0"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonOK"
+                style="@style/ButtonViewPinStyle"
+                android:background="@drawable/bg_button"
+                android:text="@string/ok"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
